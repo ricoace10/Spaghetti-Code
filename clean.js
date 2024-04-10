@@ -43,10 +43,11 @@ add(100, "Going to movies 🍿", "Matilda");
 add(200, "Stuff", "Jay");
 console.log(budget);
 
-// Function Arguments
+// Function name should say what they do
 
 // Could have used a better name here for the function.
 // A ternary operator can be use here instead of these if and else statements.
+
 var check = function () {
   for (var entry of budget) {
     var lim;
@@ -63,15 +64,17 @@ var check = function () {
 };
 check();
 
+// Remove duplicated code
+// could have removed duplicated code by creating a user function.
 console.log(budget);
 
 var bigExpenses = function (limit) {
   var output = "";
   for (var entry of budget) {
     if (entry.value <= -limit) {
-      output += el.description.slice(-2) + " / "; // Emojis are 2 chars
+      output += el.description.slice(-2) + " / ";
     }
   }
-  output = output.slice(0, -2); // Remove last '/ '
+  output = output.slice(0, -2);
   console.log(output);
 };
