@@ -10,6 +10,7 @@ var budget = [
   { value: -1800, description: "New Laptop 💻", user: "david" },
 ];
 
+// Use meaningful and pronounceable variable names
 var limits = {
   david: 1500,
   matilda: 100,
@@ -19,6 +20,7 @@ var add = function (value, description, user) {
   if (!user) user = "david";
   user = user.toLowerCase();
 
+  // Using deafault parameters instead of short circuiting or conditionals.
   var lim;
   if (limits[user]) {
     lim = limits[user];
