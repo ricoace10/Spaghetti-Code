@@ -1,3 +1,4 @@
+// Using Var instead of const as a variable
 var budget = [
   { value: 250, description: "Sold old TV 📺", user: "david" },
   { value: -45, description: "Groceries 🥑", user: "david" },
